@@ -1,0 +1,1 @@
+../../Chromebook/fish/.config/fish/config.fish
