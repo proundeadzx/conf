@@ -10,7 +10,7 @@ set autoindent
 set copyindent
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
-set history=200
+set history=200 " Extend change history
 " set cursorline
 set background=dark
 set ruler
@@ -20,7 +20,7 @@ set textwidth=0
 " set inccommand=split
 nnoremap <leader>a :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 noremap Q <nop>
-noremap ö ;
+noremap ö ; " Simulate part of US keyboard
 noremap <leader>f :FZF<CR>
 noremap <leader>t :silent !t<CR>
 noremap <space> :write<CR>
