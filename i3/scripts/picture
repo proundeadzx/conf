@@ -1,2 +1,0 @@
-#!/bin/bash
-fswebcam -q --no-banner -r 1280x720 /home/jan/SD/Pictures/$(date +%s).jpg
