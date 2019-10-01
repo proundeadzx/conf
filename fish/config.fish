@@ -1,3 +1,4 @@
+# Set common environment variables
 set normal (set_color normal)
 set fish_greeting ""
 set magenta (set_color magenta)
@@ -25,7 +26,7 @@ set __fish_git_prompt_char_stashstate '↩'
 set __fish_git_prompt_char_upstream_ahead '+'
 set __fish_git_prompt_char_upstream_behind '-'
 
-
+# Fish prompt function
 function fish_prompt
   set last_status $status
   set_color $fish_color_cwd
@@ -35,7 +36,7 @@ function fish_prompt
   set_color normal
 end
 
-
+# Aliases
 alias f "feh --scale-down --auto-zoom"
 alias v "nvim"
 alias t "urxvtc & eval"
