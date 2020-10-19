@@ -132,6 +132,9 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+q exec "killall compton; killall mpd; i3-msg exit"
 
+# Microsoft teams notifications
+for_window [class="Microsoft Teams - Preview" title="Microsoft Teams Notification"] floating enable
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -175,7 +178,7 @@ bindsym XF86MonBrightnessUp exec --no-startup-id "light -A 5; pkill -RTMIN+2 i3b
 bindsym XF86MonBrightnessDown exec --no-startup-id "light -U 5; pkill -RTMIN+2 i3blocks"
 
 
-bindsym 0xffc4 exec ~/.scripts/toggletouchpad.sh 
+bindsym 0xffc4 exec ~/.scripts/toggletouchpad.sh
 bindsym ISO_Next_Group exec --no-startup-id pkill -RTMIN+1 i3blocks
 
 
