@@ -27,7 +27,7 @@
 # The top properties below are applied to every block, but can be overridden.
 # Each block command defaults to the script name to avoid boilerplate.
 #command=/usr/local/libexec/i3blocks/$BLOCK_NAME
-command=/home/mattias/.scripts/$BLOCK_NAME
+command=/home/eitlmea/.scripts/$BLOCK_NAME
 separator=false
 separator_block_width=10
 markup=pango
@@ -56,7 +56,8 @@ interval=once
 signal=10
 
 [brightness]
-label=
+# label=
+label=bright:
 color=#FFF00
 interval=once
 signal=2
@@ -65,7 +66,8 @@ signal=2
 #
 # The type defaults to "mem" if the instance is not specified.
 [memory]
-label=
+# label=
+label=mem:
 #separator=false
 interval=30
 
@@ -96,8 +98,9 @@ interval=30
 #separator=false
 
 [wifi]
-label=
-instance=wlp58s0
+# label=
+label=wifi:
+instance=wlo1
 interval=10
 #separator=false
 
@@ -119,7 +122,8 @@ interval=10
 #interval=10
 
 [keyboard]
-label=
+# label=
+label=lang:
 color=#FFC0CB
 interval=once
 signal=1
@@ -128,14 +132,14 @@ signal=1
 #
 # The battery instance defaults to 0.
 [battery]
-#label=BAT
-#label=⚡
+label=bat:
+# label=⚡
 color=#FFA500
 instance=0
 interval=30
 
 [time]
-label=
+label=
 command=date '+%F %A %H:%M'
 interval=5
 
